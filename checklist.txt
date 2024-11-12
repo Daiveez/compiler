@@ -1,0 +1,39 @@
+PRINT 
+    -NUMBERS               [x]
+    -STRINGS               [x] 
+    -EXPRESSIONS           [x]
+    -VARIABLES             [x]
+
+VARIABLES
+    -ASSIGNING VARIABLES   [x]
+    -ASSIGNING VARIABLES TO OTHER VARIABLES   [x]
+
+
+INPUT
+    -GETTING INPUT FROM THE USER              [x]
+
+input "Please input the value of a" !a
+input "please input the value os b" !b
+
+print !a + !b
+
+
+elif tok == "!" and state == 0:
+            varstarted = 1
+            var += tok
+            tok = ""
+        elif varstarted == 1:
+            if tok == "<" or tok == ">":
+                if var != "":
+                    tokens.append("VAR:" + var)
+                    var = ""
+                    varstarted = 0
+            var += tok
+            tok =  ""
+
+elif tok == "+" or tok== "-" or tok == "/" or tok == "*" or tok == "(" or tok == ")" or tok == "**":
+            isexpr = 1
+            expr += tok
+            tok = ""
+
+
